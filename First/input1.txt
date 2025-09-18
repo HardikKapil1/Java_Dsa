@@ -1,0 +1,9 @@
+9 5
+kite btech codevita space biscuit earth dog afraid travel
+5 4 8 10 2 18 15 12 11
+kite travel
+codevita earth
+biscuit btech
+space travel
+afraid dog
+10
