@@ -8,14 +8,16 @@ public class FruitBowl {
     }
 
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        int N = sc.nextInt();
-        int[][] points = new int[N][2];
-        for (int i = 0; i < N; i++) {
-            points[i][0] = sc.nextInt();
-            points[i][1] = sc.nextInt();
+        int[][] points;
+        try (Scanner sc = new Scanner(System.in)) {
+            int N = sc.nextInt();
+            points = new int[N][2];
+            for (int i = 0; i < N; i++) {
+                points[i][0] = sc.nextInt();
+                points[i][1] = sc.nextInt();
+            }
         }
-
+        // No additional code needed here as the try-with-resources statement already ensures that 'sc' is closed.
         Arrays.sort(points, (a, b) -> (a[0] == b[0]) ? a[1] - b[1] : a[0] - b[0]);
         List<int[]> lowerHull = new ArrayList<>();
         for (int[] point : points) {
@@ -36,5 +38,6 @@ public class FruitBowl {
 
     public static int crossProduct(int[] a, int[] b, int[] c) {
         return (b[0] - a[0]) * (c[1] - a[1]) - (b[1] - a[1]) * (c[0] - a[0]);
+        
     }
 }

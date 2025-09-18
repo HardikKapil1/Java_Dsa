@@ -10,6 +10,7 @@ public class linearSearch {
             if (arr[i] == target) {
                 System.out.println("yes");
                 return;
+               
             }}
 System.out.println("no");
             
