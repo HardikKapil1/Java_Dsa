@@ -5,24 +5,35 @@ public class Stardiamond {
         Scanner sc= new Scanner(System.in);
         System.out.print("Enter n :");
         int n = sc.nextInt();
-        for(int i=1;i<=2*n-1;i++){
-            System.out.print("*"+" ");
-        }
-        System.out.println();
-        n--;
+        int nsp=n-1;
+        int nst=1;
         for(int i=1;i<=n;i++){
-            for(int j=1;j<=n+1-i;j++){
-                System.out.print("*"+" ");
-            }
-            for(int j=1;j<=2*i-1;j++){
+            for(int j=1;j<=nsp;j++){
                 System.out.print(" "+" ");
             }
-            for(int j=1;j<=n+1-i;j++){
+            for(int j=1;j<=nst;j++){
                 System.out.print("*"+" ");
             }
+            nsp--;
+            nst+=2;
+            
             System.out.println();
-            sc.close();
         }
+        nsp=1;
+        nst=nst-4;
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=nsp;j++){
+                System.out.print(" "+" ");
+            }
+            for(int j=1;j<=nst;j++){
+                System.out.print("*"+" ");
+            }
+            nsp++;
+            nst-=2;
+            
+            System.out.println();
+        }
+            sc.close();
     }
 }
-    
+                                                    

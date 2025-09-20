@@ -23,6 +23,7 @@ public class NumberBriidge {
                 System.out.print(a++ +" ");
             }
             System.out.println();
-            sc.close();}
+            sc.close();
+        }
     }
 }

@@ -9,11 +9,13 @@ public class linearSearch {
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] == target) {
                 System.out.println("yes");
+                sc.close();
                 return;
                
-            }}
-System.out.println("no");
-            
+            }
+        }
+        System.out.println("no");
+        sc.close();
  
         }
             
