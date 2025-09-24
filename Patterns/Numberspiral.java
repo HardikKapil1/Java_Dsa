@@ -16,5 +16,6 @@ public class Numberspiral {
             }
             System.out.println();
         }
+        sc.close();
     }
 }
