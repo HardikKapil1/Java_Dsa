@@ -14,5 +14,7 @@ public class SumDigits {
             n /=10;
 
         }System.out.println(sum);
+        sc.close();
     }
+    
 }

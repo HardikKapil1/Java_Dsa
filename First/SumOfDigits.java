@@ -11,5 +11,6 @@ public class SumOfDigits {
             n /= 10;
         }
         System.out.println(sum);
+        sc.close();
     }
 }
